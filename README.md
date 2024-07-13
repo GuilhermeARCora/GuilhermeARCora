@@ -10,7 +10,7 @@
 
 ###
 
-<p align="center">Me chamo Guilherme Corá e resido em Brasília-DF. Atualmente, estou cursando Engenharia de Software na Universidade Católica de Brasília (UCB). Minha aspiração é me tornar um desenvolvedor front-end, trabalhando com HTML/CSS e JavaScript.</p>
+<p align="center">Me chamo Guilherme Corá e resido em Brasília-DF. Atualmente, estou cursando Engenharia de Software na Universidade Católica de Brasília (UCB). Minha aspiração é me tornar um desenvolvedor full stack, inicialmente front-end trabalhando com HTML/CSS e JavaScript.</p>
 
 ###
 

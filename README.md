@@ -10,7 +10,7 @@
 
 ###
 
-<p align="center">Me chamo Guilherme Corá e resido em Brasília-DF. Atualmente, estou cursando Engenharia de Software na Universidade Católica de Brasília (UCB). Minha aspiração é me tornar um desenvolvedor full stack, inicialmente front-end trabalhando com HTML/CSS e JavaScript.</p>
+<p align="center">Me chamo Guilherme Corá e resido em Brasília-DF. Atualmente, estou cursando Engenharia de Software na Universidade Católica de Brasília (UCB) e trabalhando em um estágio full stack</p>
 
 ###
 
@@ -24,6 +24,14 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" height="40" alt="css3 logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" height="40"/>
+  <img width="12" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" height="40"/>
+  <img width="12" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" height="40"/>
+  <img width="12" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" height="40"/>
 </div>
 
 ###

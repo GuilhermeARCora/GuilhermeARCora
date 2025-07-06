@@ -1,20 +1,26 @@
 name: 🐍 Contribution Snake
 on:
   schedule:
-    - cron: '0 0 * * *'     # every day at midnight UTC
-  push:
-    branches:
-      - main
+    - cron: '0 0 * * *'       # every night at midnight UTC
+  workflow_dispatch:         
+
 jobs:
   snake:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Generate snake
-        uses: Platane/snk@v2
+      - name: Checkout your code
+        uses: actions/checkout@v3
+
+      - name: Generate snake SVG
+        uses: Platane/snk/svg-only@v3
         with:
-          file: output/github-contribution-grid-snake.svg
-      - name: Commit snake SVG
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            output/github-contribution-grid-snake.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit & push snake
         run: |
           git config user.name github-actions[bot]
           git config user.email github-actions[bot]@users.noreply.github.com

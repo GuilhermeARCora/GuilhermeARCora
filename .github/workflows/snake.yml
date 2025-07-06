@@ -1,29 +1,33 @@
 name: 🐍 Contribution Snake
+
+# Run every day at midnight UTC, plus on-demand via “Run workflow”
 on:
   schedule:
-    - cron: '0 0 * * *'       # every night at midnight UTC
-  workflow_dispatch:         
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
-  snake:
+  build-snake:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your code
+      # 1) Checkout your profile repo
+      - name: Checkout repo
         uses: actions/checkout@v3
 
+      # 2) Generate the SVG-only snake
       - name: Generate snake SVG
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            output/github-contribution-grid-snake.svg
+          github_user_name: GuilhermeARCora         # your GitHub username
+          outputs: output/github-contribution-grid-snake.svg
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # required for v3+
 
-      - name: Commit & push snake
+      # 3) Commit & push it back into `output/`
+      - name: Commit & push snake SVG
         run: |
           git config user.name github-actions[bot]
           git config user.email github-actions[bot]@users.noreply.github.com
           git add output/github-contribution-grid-snake.svg
-          git commit -m "chore: update snake 🐍" || echo "nothing to commit"
+          git commit -m "chore: update snake 🐍" || echo "No changes to commit"
           git push

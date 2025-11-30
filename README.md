@@ -6,7 +6,7 @@
 
 ###
 
-<p align="center">Hello! I’m Guilherme Corá, based in Brasília-DF, Brazil. I’m currently interning as a full-stack web developer and will soon graduate with a degree in Software Engineering from the Universidade Católica de Brasília.</p>
+<p align="center">Hello! I’m Guilherme Corá, based in Brasília-DF, Brazil. I’m a Full-Stack Web Developer and Software Engineering graduate.</p>
 
 ###
 
